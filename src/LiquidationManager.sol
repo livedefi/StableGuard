@@ -12,8 +12,8 @@ contract LiquidationManager is ILiquidationManager, ReentrancyGuard {
     // ============ ULTRA-PACKED STORAGE (1 SLOT) ============
     struct PackedConfig {
         address stableGuard; // 20 bytes
-        uint32 minRatio; // 4 bytes - 150% = 15000
-        uint32 liqThreshold; // 4 bytes - 120% = 12000
+        uint32 minRatio; // 4 bytes
+        uint32 liqThreshold; // 4 bytes
         uint32 bonus; // 4 bytes - 10% = 1000
             // Total: 32 bytes (1 slot)
     }
